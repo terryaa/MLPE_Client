@@ -1,0 +1,975 @@
+[2020-08-24 16:11:35:718][restartedMain] INFO  c.q.e.SpringBootInitializer - Starting SpringBootInitializer on DESKTOP-HBCFTBD with PID 2908 (/home/yh/workspace/ess_client/bin/main started by yh in /home/yh/workspace)
+[2020-08-24 16:11:35:721][restartedMain] DEBUG c.q.e.SpringBootInitializer - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+[2020-08-24 16:11:35:721][restartedMain] INFO  c.q.e.SpringBootInitializer - The following profiles are active: develop
+[2020-08-24 16:11:35:796][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2020-08-24 16:11:36:1463][restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+[2020-08-24 16:11:36:1495][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2020-08-24 16:11:36:1518][restartedMain] INFO  c.q.e.SpringBootInitializer - Started SpringBootInitializer in 1.26 seconds (JVM running for 2.046)
+[2020-08-24 16:11:36:1525][scheduling-1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[2020-08-24 16:11:36:1538][task-1] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ----------------data transmission started-------------
+[2020-08-24 16:11:36:1942][task-1] WARN  o.glassfish.jersey.internal.Errors - The following warnings have been detected: WARNING: HK2 failure has been detected in a code that does not run in an active Jersey Error scope.
+WARNING: HK2 service reification failed for [org.glassfish.jersey.message.internal.DataSourceProvider] with an exception:
+MultiException stack 1 of 2
+java.lang.NoClassDefFoundError: javax/activation/DataSource
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2357)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1378)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1374)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.jvnet.hk2.internal.Utilities.getAllConstructors(Utilities.java:1374)
+	at org.jvnet.hk2.internal.Utilities.findProducerConstructor(Utilities.java:1317)
+	at org.jvnet.hk2.internal.DefaultClassAnalyzer.getConstructor(DefaultClassAnalyzer.java:83)
+	at org.glassfish.jersey.inject.hk2.JerseyClassAnalyzer.getConstructor(JerseyClassAnalyzer.java:148)
+	at org.jvnet.hk2.internal.Utilities.getConstructor(Utilities.java:180)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:129)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:180)
+	at org.jvnet.hk2.internal.SystemDescriptor.internalReify(SystemDescriptor.java:740)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:694)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:337)
+	at org.glassfish.jersey.internal.inject.Providers.getCustomProviders(Providers.java:175)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:238)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: javax.activation.DataSource
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 50 more
+MultiException stack 2 of 2
+java.lang.IllegalArgumentException: Errors were discovered while reifying SystemDescriptor(
+	implementation=org.glassfish.jersey.message.internal.DataSourceProvider
+	contracts={javax.ws.rs.ext.MessageBodyReader,javax.ws.rs.ext.MessageBodyWriter}
+	scope=javax.inject.Singleton
+	qualifiers={}
+	descriptorType=CLASS
+	descriptorVisibility=NORMAL
+	metadata=
+	rank=0
+	loader=null
+	proxiable=null
+	proxyForSameScope=null
+	analysisName=null
+	id=14
+	locatorId=0
+	identityHashCode=1509362904
+	reified=false)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:705)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:337)
+	at org.glassfish.jersey.internal.inject.Providers.getCustomProviders(Providers.java:175)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:238)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+[2020-08-24 16:11:36:1943][task-1] WARN  o.glassfish.jersey.internal.Errors - The following warnings have been detected: WARNING: HK2 failure has been detected in a code that does not run in an active Jersey Error scope.
+WARNING: HK2 service reification failed for [org.glassfish.jersey.message.internal.DataSourceProvider] with an exception:
+MultiException stack 1 of 2
+java.lang.NoClassDefFoundError: javax/activation/DataSource
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2357)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1378)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1374)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.jvnet.hk2.internal.Utilities.getAllConstructors(Utilities.java:1374)
+	at org.jvnet.hk2.internal.Utilities.findProducerConstructor(Utilities.java:1317)
+	at org.jvnet.hk2.internal.DefaultClassAnalyzer.getConstructor(DefaultClassAnalyzer.java:83)
+	at org.glassfish.jersey.inject.hk2.JerseyClassAnalyzer.getConstructor(JerseyClassAnalyzer.java:148)
+	at org.jvnet.hk2.internal.Utilities.getConstructor(Utilities.java:180)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:129)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:180)
+	at org.jvnet.hk2.internal.SystemDescriptor.internalReify(SystemDescriptor.java:740)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:694)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:337)
+	at org.glassfish.jersey.internal.inject.Providers.getCustomProviders(Providers.java:175)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:238)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: javax.activation.DataSource
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 50 more
+MultiException stack 2 of 2
+java.lang.IllegalArgumentException: Errors were discovered while reifying SystemDescriptor(
+	implementation=org.glassfish.jersey.message.internal.DataSourceProvider
+	contracts={javax.ws.rs.ext.MessageBodyReader,javax.ws.rs.ext.MessageBodyWriter}
+	scope=javax.inject.Singleton
+	qualifiers={}
+	descriptorType=CLASS
+	descriptorVisibility=NORMAL
+	metadata=
+	rank=0
+	loader=null
+	proxiable=null
+	proxyForSameScope=null
+	analysisName=null
+	id=14
+	locatorId=0
+	identityHashCode=1509362904
+	reified=false)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:705)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:337)
+	at org.glassfish.jersey.internal.inject.Providers.getCustomProviders(Providers.java:175)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:238)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+[2020-08-24 16:11:36:1951][task-1] WARN  o.glassfish.jersey.internal.Errors - The following warnings have been detected: WARNING: HK2 failure has been detected in a code that does not run in an active Jersey Error scope.
+WARNING: HK2 service reification failed for [org.glassfish.jersey.message.internal.DataSourceProvider] with an exception:
+MultiException stack 1 of 2
+java.lang.NoClassDefFoundError: javax/activation/DataSource
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2357)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1378)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1374)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.jvnet.hk2.internal.Utilities.getAllConstructors(Utilities.java:1374)
+	at org.jvnet.hk2.internal.Utilities.findProducerConstructor(Utilities.java:1317)
+	at org.jvnet.hk2.internal.DefaultClassAnalyzer.getConstructor(DefaultClassAnalyzer.java:83)
+	at org.glassfish.jersey.inject.hk2.JerseyClassAnalyzer.getConstructor(JerseyClassAnalyzer.java:148)
+	at org.jvnet.hk2.internal.Utilities.getConstructor(Utilities.java:180)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:129)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:180)
+	at org.jvnet.hk2.internal.SystemDescriptor.internalReify(SystemDescriptor.java:740)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:694)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:329)
+	at org.glassfish.jersey.internal.inject.Providers.getProviders(Providers.java:157)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:239)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: javax.activation.DataSource
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 50 more
+MultiException stack 2 of 2
+java.lang.IllegalArgumentException: Errors were discovered while reifying SystemDescriptor(
+	implementation=org.glassfish.jersey.message.internal.DataSourceProvider
+	contracts={javax.ws.rs.ext.MessageBodyReader,javax.ws.rs.ext.MessageBodyWriter}
+	scope=javax.inject.Singleton
+	qualifiers={}
+	descriptorType=CLASS
+	descriptorVisibility=NORMAL
+	metadata=
+	rank=0
+	loader=null
+	proxiable=null
+	proxyForSameScope=null
+	analysisName=null
+	id=14
+	locatorId=0
+	identityHashCode=1509362904
+	reified=false)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:705)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:329)
+	at org.glassfish.jersey.internal.inject.Providers.getProviders(Providers.java:157)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:239)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+[2020-08-24 16:11:36:1952][task-1] WARN  o.glassfish.jersey.internal.Errors - The following warnings have been detected: WARNING: HK2 failure has been detected in a code that does not run in an active Jersey Error scope.
+WARNING: HK2 service reification failed for [org.glassfish.jersey.message.internal.DataSourceProvider] with an exception:
+MultiException stack 1 of 2
+java.lang.NoClassDefFoundError: javax/activation/DataSource
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2357)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1378)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1374)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.jvnet.hk2.internal.Utilities.getAllConstructors(Utilities.java:1374)
+	at org.jvnet.hk2.internal.Utilities.findProducerConstructor(Utilities.java:1317)
+	at org.jvnet.hk2.internal.DefaultClassAnalyzer.getConstructor(DefaultClassAnalyzer.java:83)
+	at org.glassfish.jersey.inject.hk2.JerseyClassAnalyzer.getConstructor(JerseyClassAnalyzer.java:148)
+	at org.jvnet.hk2.internal.Utilities.getConstructor(Utilities.java:180)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:129)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:180)
+	at org.jvnet.hk2.internal.SystemDescriptor.internalReify(SystemDescriptor.java:740)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:694)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:329)
+	at org.glassfish.jersey.internal.inject.Providers.getProviders(Providers.java:157)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:239)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: javax.activation.DataSource
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 50 more
+MultiException stack 2 of 2
+java.lang.IllegalArgumentException: Errors were discovered while reifying SystemDescriptor(
+	implementation=org.glassfish.jersey.message.internal.DataSourceProvider
+	contracts={javax.ws.rs.ext.MessageBodyReader,javax.ws.rs.ext.MessageBodyWriter}
+	scope=javax.inject.Singleton
+	qualifiers={}
+	descriptorType=CLASS
+	descriptorVisibility=NORMAL
+	metadata=
+	rank=0
+	loader=null
+	proxiable=null
+	proxyForSameScope=null
+	analysisName=null
+	id=14
+	locatorId=0
+	identityHashCode=1509362904
+	reified=false)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:705)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:329)
+	at org.glassfish.jersey.internal.inject.Providers.getProviders(Providers.java:157)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:239)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+[2020-08-24 16:11:36:1970][task-1] WARN  o.glassfish.jersey.internal.Errors - The following warnings have been detected: WARNING: HK2 failure has been detected in a code that does not run in an active Jersey Error scope.
+WARNING: HK2 service reification failed for [org.glassfish.jersey.message.internal.DataSourceProvider] with an exception:
+MultiException stack 1 of 2
+java.lang.NoClassDefFoundError: javax/activation/DataSource
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2357)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1378)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1374)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.jvnet.hk2.internal.Utilities.getAllConstructors(Utilities.java:1374)
+	at org.jvnet.hk2.internal.Utilities.findProducerConstructor(Utilities.java:1317)
+	at org.jvnet.hk2.internal.DefaultClassAnalyzer.getConstructor(DefaultClassAnalyzer.java:83)
+	at org.glassfish.jersey.inject.hk2.JerseyClassAnalyzer.getConstructor(JerseyClassAnalyzer.java:148)
+	at org.jvnet.hk2.internal.Utilities.getConstructor(Utilities.java:180)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:129)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:180)
+	at org.jvnet.hk2.internal.SystemDescriptor.internalReify(SystemDescriptor.java:740)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:694)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:337)
+	at org.glassfish.jersey.internal.inject.Providers.getCustomProviders(Providers.java:175)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:264)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: javax.activation.DataSource
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 50 more
+MultiException stack 2 of 2
+java.lang.IllegalArgumentException: Errors were discovered while reifying SystemDescriptor(
+	implementation=org.glassfish.jersey.message.internal.DataSourceProvider
+	contracts={javax.ws.rs.ext.MessageBodyReader,javax.ws.rs.ext.MessageBodyWriter}
+	scope=javax.inject.Singleton
+	qualifiers={}
+	descriptorType=CLASS
+	descriptorVisibility=NORMAL
+	metadata=
+	rank=0
+	loader=null
+	proxiable=null
+	proxyForSameScope=null
+	analysisName=null
+	id=14
+	locatorId=0
+	identityHashCode=1509362904
+	reified=false)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:705)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:337)
+	at org.glassfish.jersey.internal.inject.Providers.getCustomProviders(Providers.java:175)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:264)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+[2020-08-24 16:11:36:1971][task-1] WARN  o.glassfish.jersey.internal.Errors - The following warnings have been detected: WARNING: HK2 failure has been detected in a code that does not run in an active Jersey Error scope.
+WARNING: HK2 service reification failed for [org.glassfish.jersey.message.internal.DataSourceProvider] with an exception:
+MultiException stack 1 of 2
+java.lang.NoClassDefFoundError: javax/activation/DataSource
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2357)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1378)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1374)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.jvnet.hk2.internal.Utilities.getAllConstructors(Utilities.java:1374)
+	at org.jvnet.hk2.internal.Utilities.findProducerConstructor(Utilities.java:1317)
+	at org.jvnet.hk2.internal.DefaultClassAnalyzer.getConstructor(DefaultClassAnalyzer.java:83)
+	at org.glassfish.jersey.inject.hk2.JerseyClassAnalyzer.getConstructor(JerseyClassAnalyzer.java:148)
+	at org.jvnet.hk2.internal.Utilities.getConstructor(Utilities.java:180)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:129)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:180)
+	at org.jvnet.hk2.internal.SystemDescriptor.internalReify(SystemDescriptor.java:740)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:694)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:337)
+	at org.glassfish.jersey.internal.inject.Providers.getCustomProviders(Providers.java:175)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:264)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: javax.activation.DataSource
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 50 more
+MultiException stack 2 of 2
+java.lang.IllegalArgumentException: Errors were discovered while reifying SystemDescriptor(
+	implementation=org.glassfish.jersey.message.internal.DataSourceProvider
+	contracts={javax.ws.rs.ext.MessageBodyReader,javax.ws.rs.ext.MessageBodyWriter}
+	scope=javax.inject.Singleton
+	qualifiers={}
+	descriptorType=CLASS
+	descriptorVisibility=NORMAL
+	metadata=
+	rank=0
+	loader=null
+	proxiable=null
+	proxyForSameScope=null
+	analysisName=null
+	id=14
+	locatorId=0
+	identityHashCode=1509362904
+	reified=false)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:705)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:337)
+	at org.glassfish.jersey.internal.inject.Providers.getCustomProviders(Providers.java:175)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:264)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+[2020-08-24 16:11:36:1973][task-1] WARN  o.glassfish.jersey.internal.Errors - The following warnings have been detected: WARNING: HK2 failure has been detected in a code that does not run in an active Jersey Error scope.
+WARNING: HK2 service reification failed for [org.glassfish.jersey.message.internal.DataSourceProvider] with an exception:
+MultiException stack 1 of 2
+java.lang.NoClassDefFoundError: javax/activation/DataSource
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2357)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1378)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1374)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.jvnet.hk2.internal.Utilities.getAllConstructors(Utilities.java:1374)
+	at org.jvnet.hk2.internal.Utilities.findProducerConstructor(Utilities.java:1317)
+	at org.jvnet.hk2.internal.DefaultClassAnalyzer.getConstructor(DefaultClassAnalyzer.java:83)
+	at org.glassfish.jersey.inject.hk2.JerseyClassAnalyzer.getConstructor(JerseyClassAnalyzer.java:148)
+	at org.jvnet.hk2.internal.Utilities.getConstructor(Utilities.java:180)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:129)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:180)
+	at org.jvnet.hk2.internal.SystemDescriptor.internalReify(SystemDescriptor.java:740)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:694)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:329)
+	at org.glassfish.jersey.internal.inject.Providers.getProviders(Providers.java:157)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:265)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: javax.activation.DataSource
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 50 more
+MultiException stack 2 of 2
+java.lang.IllegalArgumentException: Errors were discovered while reifying SystemDescriptor(
+	implementation=org.glassfish.jersey.message.internal.DataSourceProvider
+	contracts={javax.ws.rs.ext.MessageBodyReader,javax.ws.rs.ext.MessageBodyWriter}
+	scope=javax.inject.Singleton
+	qualifiers={}
+	descriptorType=CLASS
+	descriptorVisibility=NORMAL
+	metadata=
+	rank=0
+	loader=null
+	proxiable=null
+	proxyForSameScope=null
+	analysisName=null
+	id=14
+	locatorId=0
+	identityHashCode=1509362904
+	reified=false)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:705)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:329)
+	at org.glassfish.jersey.internal.inject.Providers.getProviders(Providers.java:157)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:265)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+[2020-08-24 16:11:36:1974][task-1] WARN  o.glassfish.jersey.internal.Errors - The following warnings have been detected: WARNING: HK2 failure has been detected in a code that does not run in an active Jersey Error scope.
+WARNING: HK2 service reification failed for [org.glassfish.jersey.message.internal.DataSourceProvider] with an exception:
+MultiException stack 1 of 2
+java.lang.NoClassDefFoundError: javax/activation/DataSource
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2357)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1378)
+	at org.jvnet.hk2.internal.Utilities$3.run(Utilities.java:1374)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.jvnet.hk2.internal.Utilities.getAllConstructors(Utilities.java:1374)
+	at org.jvnet.hk2.internal.Utilities.findProducerConstructor(Utilities.java:1317)
+	at org.jvnet.hk2.internal.DefaultClassAnalyzer.getConstructor(DefaultClassAnalyzer.java:83)
+	at org.glassfish.jersey.inject.hk2.JerseyClassAnalyzer.getConstructor(JerseyClassAnalyzer.java:148)
+	at org.jvnet.hk2.internal.Utilities.getConstructor(Utilities.java:180)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:129)
+	at org.jvnet.hk2.internal.ClazzCreator.initialize(ClazzCreator.java:180)
+	at org.jvnet.hk2.internal.SystemDescriptor.internalReify(SystemDescriptor.java:740)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:694)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:329)
+	at org.glassfish.jersey.internal.inject.Providers.getProviders(Providers.java:157)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:265)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: javax.activation.DataSource
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 50 more
+MultiException stack 2 of 2
+java.lang.IllegalArgumentException: Errors were discovered while reifying SystemDescriptor(
+	implementation=org.glassfish.jersey.message.internal.DataSourceProvider
+	contracts={javax.ws.rs.ext.MessageBodyReader,javax.ws.rs.ext.MessageBodyWriter}
+	scope=javax.inject.Singleton
+	qualifiers={}
+	descriptorType=CLASS
+	descriptorVisibility=NORMAL
+	metadata=
+	rank=0
+	loader=null
+	proxiable=null
+	proxyForSameScope=null
+	analysisName=null
+	id=14
+	locatorId=0
+	identityHashCode=1509362904
+	reified=false)
+	at org.jvnet.hk2.internal.SystemDescriptor.reify(SystemDescriptor.java:705)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.reifyDescriptor(ServiceLocatorImpl.java:464)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.narrow(ServiceLocatorImpl.java:2310)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.access$1200(ServiceLocatorImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1395)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl$9.compute(ServiceLocatorImpl.java:1390)
+	at org.glassfish.hk2.utilities.cache.internal.WeakCARCacheImpl.compute(WeakCARCacheImpl.java:128)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1452)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1377)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServiceHandles(ServiceLocatorImpl.java:1366)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllServiceHolders(AbstractHk2InjectionManager.java:158)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllServiceHolders(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.inject.Providers.getServiceHolders(Providers.java:329)
+	at org.glassfish.jersey.internal.inject.Providers.getProviders(Providers.java:157)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.initialize(MessageBodyFactory.java:265)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkersConfigurator.postInit(MessageBodyFactory.java:136)
+	at org.glassfish.jersey.client.ClientConfig$State.lambda$initRuntime$2(ClientConfig.java:470)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at org.glassfish.jersey.client.ClientConfig$State.initRuntime(ClientConfig.java:470)
+	at org.glassfish.jersey.internal.util.collection.Values$LazyValueImpl.get(Values.java:341)
+	at org.glassfish.jersey.client.ClientConfig.getRuntime(ClientConfig.java:826)
+	at org.glassfish.jersey.client.ClientRequest.getClientRuntime(ClientRequest.java:241)
+	at org.glassfish.jersey.client.ClientRequest.getInjectionManager(ClientRequest.java:622)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.rx(JerseyInvocation.java:478)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:106)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+[2020-08-24 16:11:40:6238][task-1] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - -------------------transfer success-----------
+[2020-08-24 16:11:40:6243][task-1] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ---------data transmission ended----------
+[2020-08-24 16:11:41:6512][task-2] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ----------------data transmission started-------------
+[2020-08-24 16:11:44:9963][task-2] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - -------------------transfer success-----------
+[2020-08-24 16:11:44:9972][task-2] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ---------data transmission ended----------
+[2020-08-24 16:11:46:11511][task-3] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ----------------data transmission started-------------
+[2020-08-24 16:11:49:15002][task-3] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - -------------------transfer success-----------
+[2020-08-24 16:11:49:15005][task-3] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ---------data transmission ended----------
+[2020-08-24 16:11:51:16512][task-4] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ----------------data transmission started-------------
+[2020-08-24 16:11:54:20228][task-4] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - -------------------transfer success-----------
+[2020-08-24 16:11:54:20233][task-4] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ---------data transmission ended----------
+[2020-08-24 16:11:56:21512][task-5] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ----------------data transmission started-------------
+[2020-08-24 16:11:59:25023][task-5] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - -------------------transfer success-----------
+[2020-08-24 16:11:59:25026][task-5] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ---------data transmission ended----------
+[2020-08-24 16:12:01:26512][task-6] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ----------------data transmission started-------------
+[2020-08-24 16:12:05:30394][task-6] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - -------------------transfer success-----------
+[2020-08-24 16:12:05:30398][task-6] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ---------data transmission ended----------
+[2020-08-24 16:12:06:31512][task-7] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ----------------data transmission started-------------
+[2020-08-24 16:12:09:35018][task-7] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - -------------------transfer success-----------
+[2020-08-24 16:12:09:35021][task-7] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ---------data transmission ended----------
+[2020-08-24 16:12:11:36512][task-8] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ----------------data transmission started-------------
+[2020-08-24 16:12:15:40526][task-8] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - -------------------transfer success-----------
+[2020-08-24 16:12:15:40528][task-8] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ---------data transmission ended----------
+[2020-08-24 16:12:16:41511][task-1] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ----------------data transmission started-------------
+[2020-08-24 16:12:19:45002][task-1] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - -------------------transfer success-----------
+[2020-08-24 16:12:19:45003][task-1] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ---------data transmission ended----------
+[2020-08-24 16:12:21:46512][task-2] INFO  c.q.e.c.Rx_Client$$EnhancerBySpringCGLIB$$62256a30 - ----------------data transmission started-------------
+[2020-08-24 16:12:22:48100][SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-08-24 16:12:22:48105][SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+[2020-08-24 16:12:22:48106][task-2] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - Unexpected exception occurred invoking async method: public void com.qcells.ess_client.client.Rx_Client.exec_scheduled() throws java.lang.NumberFormatException,java.lang.InterruptedException
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1081)
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1369)
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:278)
+	at com.qcells.ess_client.client.Rx_Client.simulation(Rx_Client.java:118)
+	at com.qcells.ess_client.client.Rx_Client.exec_scheduled(Rx_Client.java:164)
+	at com.qcells.ess_client.client.Rx_Client$$FastClassBySpringCGLIB$$8fa4f8a9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
