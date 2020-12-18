@@ -60,7 +60,7 @@ CREATE TABLE strings_log
     error                 VARCHAR(8)     NOT NULL, 
     stringVoltage         SMALLINT       NOT NULL,
     stringCurrent         FLOAT(3)       NOT NULL, 
-    temperature           SMALLINT       NOT NULL, 
+    temperature           FLOAT(1)       NOT NULL, 
     totalWh               INT            NOT NULL,
     PRIMARY KEY(gt_id,st_id,endts)
 );
